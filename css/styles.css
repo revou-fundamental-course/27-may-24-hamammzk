@@ -1,7 +1,15 @@
 /* ini css */
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
 .logo-icon {
-    height : 50px;
+    height: 50px;
     width: 50px;
-    border: 1px solid yellow
+    border: 1px solid yellow;
+}
+
+.nav-item {
+    border: 1px solid yellow;
 }
