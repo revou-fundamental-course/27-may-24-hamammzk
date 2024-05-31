@@ -1,0 +1,1 @@
+// bagiamana menggunakan Js /
