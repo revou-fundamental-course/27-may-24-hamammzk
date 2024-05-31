@@ -10,9 +10,12 @@ nav>section{
 }
 
 .logo-icon {
-    height: 50px;
-    width: 50px;
-    border: 1px solid yellow;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: url(https://www.bing.com/images/blob?bcid=r0WSOfBnuxcHoyOPntPizgBghLzV.....8Q);
+    background-size: contain;
+    background-origin: border-box;
 }
 
 .nav-item {
@@ -28,5 +31,18 @@ nav>section{
 .fasility-list {
     display: flex;
     justify-content: space-evenly;
+    
 }
 
+.form-result{
+    height: 50px;
+    border: 1px solid black;
+}
+
+.massage-us{
+    display: flex;
+}
+.result-container {
+    width: 100%;
+    height: 50%;
+}
