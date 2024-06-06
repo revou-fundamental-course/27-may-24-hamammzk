@@ -4,54 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> hamammzk tugas</title>
-    <link rel="stylesheet" href="css/styles.css"
+    <title> hamammzk's web</title>
+    <link rel="stylesheet" href="css/styles.css"></link>
 </head>
+
 <body>
     <nav>
         <div class="logo-icon"></div>
 
         <section>
-            <a class="nav-item"> home </a>
-            <a class="nav-item"> our school </a>
-            <a class="nav-item"> contact us </a>
+            <a class="nav-item" href="#home"> home </a>
+            <a class="nav-item" href="#our school"> our school </a>
+            <a class="nav-item" href="#massages-us"> contact us </a>
         </section>
+
     </nav>
     
     <hr>
+    
     <section>
     
         <!-- home -->
-        <section>
+        <section id="home">
             <header>
-                <h1> HI HAMMAM, WELCOME BACK </h1>
+                <h1>Hi <span id="Nama"> HAMMAM </span> welcome back </h1>
 
             </header>
             <article>
-                <p> selamat datang kembali di website ini </p>
-                <div class="banner-container"></div>
+                <p> selamat datang di website ini </p>
+                <div class="banner-container">
+                    <div class="slides">
+                        <div class="slide" id="slide1">
+                            <img src="asset/02.jpeg" alt="image 1">
+                        </div>
+                        <div class="slide" id="slide2">
+                            <img src="asset/03.jpeg" alt="image 2">
+                        </div>
+                    </div>
+
+                <button class="prev" onclick="moveslide(-1)">&#10094;</button>
+                <button class="next" onclick="moveslide(1)">&#10095;</button>
+                        
+                    </div>
+                </div>
+                
             </article>
         </section>
-
+    
         <hr>
 
         <!-- our school -->
-        <section>
+        <section id="our school">
             <header>
-                <h2> our school </h2>
+                <h2> Our school </h2>
             </header>
             <article class="fasility-list">
-            <div>
+            <div style="    text-align: -webkit-center;">    
                     <div style="width: 50px; height:50px; border-radius: 50%; border: 1px solid black;"></div>
                 <h6> guru profesional </h6>
             </div>
 
-            <div>
+            <div style="    text-align: -webkit-center;">
                 <div style="width: 50px; height:50px; border-radius: 50%; border: 1px solid black;"></div>
             <h6> sarana & prasarana </h6>
             </div>   
             
-            <div>
+            <div style="    text-align: -webkit-center;">
                 <div style="width: 50px; height:50px; border-radius: 50%; border: 1px solid black;"></div>
         <h6> prestasi murid </h6>
             </div>
@@ -64,22 +82,50 @@
         <hr>
     
         <!-- contact us -->
-        <section>\
+        <section class="massage-us" id="massages-us">
             <header>
                 <h2>Massage Us</h2> 
             </header>
             <section class="massage-us">
-                <!-- form -->
-                <section>
-                    <form>
-                        <lable>  name : </lable>
-                        <input />
-                    </form>
-                </section>
+        <!-- form -->
+        <section class="form-container">
+            <form id="formulir">
+                <div class="form-grup">
+                <label for="nama" class="">Nama :</label>
+                <input type="text" id="nama" name="nama" placeholder="nama anda">
+                </div>
+
+                <div class="form-grup">
+                    <label for="email" class="">Email :</label>
+                    <input type="text" id="email" name="email">
+                </div>
+
+                <div class="form-grup">
+                    <label for="tgllahir" class="">Tanggal Lahir :</label>
+                    <input type="date" id="tgllahir" name="tgllahir">
+                </div>
+
+                <div class="form-grup">
+                    <label>Jenis Kelamin</label>
+                    <input type="radio" id="laki-laki" name="jeniskelamin" value="Laki-Laki" required></input>
+                    <label for="lakilaki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="jeniskelamin" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>>
+
+                <div class="form-grup">
+                    <label for="Pesan"> Pesan :</label>
+                    <textarea id="Pesan" name="pesan" rows="4" required></textarea>
+                </div>
+                <button type="submit" id="submit" onclick="formvalidation()"> Kirim </button>
+
+            </form>
+        </section>
 
                 <!-- result -->
                 <section class="result-container">
-                    <div class=form-result>
+                    <div class="form-result">
+                        <textarea id="result" rows="15" cols="20" readonly></textarea>
 
                     </div>
                 </section>
@@ -87,9 +133,21 @@
         </section>
 
     </section>
-    <footer>
-        
+    <hr>
+    <footer style="text-align: center;">
+        <div ></div>
+            
+             <div class="icon-wrapper">
+                 <img src="https://smkmuh2klaten.sch.id/wp-content/uploads/2022/08/bethemestore2-footer-icon1.svg"></div>
+               <h5>Telp</h5>
+            <div class="desc">(0272) 321 186</div>
+
+                <h6 class="title">Jalan Mayor Kusmanto, Setran, Gergunung, Klaten Utara, Klaten, Jawa Tengah</h6>
+ 
+        </div>
+
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
